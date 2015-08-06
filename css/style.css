@@ -56,7 +56,7 @@ header{
 	margin: 0 0 20px 0;
 }
 
-.produto > .timer{
+.produto > .countdown{
 	position: relative;
 	font-family: 'Franklin Gothic';
 	font-size: 1.5625em;
