@@ -11,6 +11,18 @@ header{
 	position: relative;
 	text-align: center;
 	top: 32px;
+	-webkit-transition: opacity 0.3s, filter 0.3s;
+	transition: opacity 0.3s, filter 0.3s;
+}
+
+.logo_big:hover{
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+}
+
+.logo_big a{
+	text-decoration: none;
+	border: none;
 }
 
 /* SITE */
@@ -58,12 +70,21 @@ header{
 	text-align: center;
 }
 
-.product_image > img{
+.product_image img{
 	position: relative;
+	width: 342px;
+	height: 290px;
 	top: 50%;
 	-moz-transform: translate(0, -50%);
 	-webkit-transform: translate(0, -50%);
 	transform: translate(0, -50%);
+	-webkit-transition: width 0.3s, height 0.3s;
+	transition: width 0.3s, height 0.3s;
+}
+
+.product_image img:hover{
+	width: 380px;
+	height: 322px;
 }
 
 .product_description{
@@ -72,11 +93,21 @@ header{
 	padding: 20px;
 }
 
-.product_description > h1{
+.product_description h1{
 	font-size: 1em;
 	font-weight: 600;
 	line-height: 20px;
+}
+
+.product_description a{
 	color: #0b485b;
+	text-decoration: none;
+	-webkit-transition: color 0.4s;
+	transition: color 0.4s;
+}
+
+.product_description a:hover{
+	color: #8b1adb;
 }
 
 .product_description > .preco{
@@ -91,10 +122,17 @@ header{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.125em;
 	font-weight: 600;
-	padding: 10px 50px 10px 50px;
+	padding: 10px 30px 10px 30px;
 	color: #fff;
 	border: none;
 	cursor: pointer;
+	-webkit-transition: background-color 0.4s, padding: 0.4s;
+	transition: background-color 0.4s, padding 0.4s;
+}
+
+.btn_comprar:hover{
+	background-color: #0b485b;
+	padding: 10px 50px 10px 50px;
 }
 
 footer{
@@ -112,6 +150,18 @@ footer{
 #footer_wrapper img{
 	position: relative;
 	top: 25px;
+	-webkit-transition: opacity 0.3s, filter 0.3s;
+	transition: opacity 0.3s, filter 0.3s;
+}
+
+#footer_wrapper img:hover{
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+}
+
+#footer_wrapper a{
+	text-decoration: none;
+	border: none;
 }
 
 .footer_links li{
@@ -126,9 +176,10 @@ footer{
 .footer_links li a{
 	color: #fff;
 	text-decoration: none;
+	-webkit-transition: color 0.4s;
+	transition: color 0.4s;
 }
 
 .footer_links li a:hover{
 	color: #8b1adb;
-	text-decoration: underline;
 }
