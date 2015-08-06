@@ -109,7 +109,7 @@ footer{
 	margin: 0 auto;
 }
 
-img{
+#footer_wrapper img{
 	position: relative;
 	top: 25px;
 }
@@ -126,4 +126,9 @@ img{
 .footer_links li a{
 	color: #fff;
 	text-decoration: none;
+}
+
+.footer_links li a:hover{
+	color: #8b1adb;
+	text-decoration: underline;
 }
